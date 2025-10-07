@@ -1,0 +1,5 @@
+com\example\spotstar\Service\SignupService.class
+com\example\spotstar\Controller\SignupController.class
+com\example\spotstar\Repository\UserRepo.class
+com\example\spotstar\Model\User.class
+com\example\spotstar\SpotstarApplication.class
