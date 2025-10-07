@@ -1,11 +1,11 @@
-# Use OpenJDK base image
-FROM openjdk:17-jdk-slim
+# Use Java 21 instead of 17
+FROM openjdk:21-jdk-slim
 
 # Set working directory
 WORKDIR /app
 
-# Copy jar file into the container
+# Copy the built jar into the image
 COPY target/*.jar app.jar
 
-# Run the jar file
+# Run the jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
